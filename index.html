@@ -4,8 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amdadul Haque - AI Virtual Assistant, Web Scraping, Lead Generation and E-Commerce Specialist.">
   <title>Amdadul Haque | Professional Portfolio</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,67 +23,277 @@
       color: white;
       line-height: 1.7;
     }
+
     header {
-      padding: 80px 20px;
+      padding: 70px 20px;
       text-align: center;
-      background: #14213d;
+      background: linear-gradient(135deg, #14213d, #0b1220);
     }
-    h1 { font-size: 42px; margin-bottom: 10px; }
-    h2 { color: #38bdf8; }
-    p { color: #cbd5e1; }
-    section { max-width: 950px; margin: auto; padding: 35px 20px; }
+
+    .profile-photo {
+      width: 175px;
+      height: 175px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 50%;
+      border: 5px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.06);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    section {
+      max-width: 950px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
     .card {
       background: #1e293b;
-      padding: 20px;
+      padding: 22px;
       border-radius: 12px;
       margin: 15px 0;
+      border: 1px solid #334155;
+      transition: transform 0.3s, border-color 0.3s;
     }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+    }
+
     .btn {
       display: inline-block;
       padding: 12px 25px;
+      margin: 8px 5px;
       background: #38bdf8;
       color: #0b1220;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s;
     }
-    footer { text-align: center; padding: 25px; }
+
+    .btn:hover {
+      background: #7dd3fc;
+    }
+
+    .secondary-btn {
+      background: transparent;
+      color: #38bdf8;
+      border: 2px solid #38bdf8;
+    }
+
+    .secondary-btn:hover {
+      background: #1e293b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #080e19;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 50px 15px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+      }
+
+      section {
+        padding: 30px 18px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- Profile Header -->
   <header>
+
+    <img
+      src="WhatsApp%20Image%202026-11-02%20at%2010.45.31%20PM.jpeg"
+      alt="Professional portrait of Amdadul Haque"
+      class="profile-photo"
+    >
+
     <h1>Amdadul Haque</h1>
-    <p>AI Virtual Assistant | Web Scraping | Lead Generation</p>
+
+    <p class="subtitle">
+      AI Virtual Assistant | Web Scraping | Lead Generation
+    </p>
+
     <a class="btn" href="#contact">Contact Me</a>
+    <a class="btn secondary-btn" href="#services">My Services</a>
+
   </header>
 
-  <section>
+  <!-- About Me -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>I help businesses streamline operations through virtual assistance, web research, data extraction, and e-commerce support.</p>
+
+    <p>
+      Hello! I'm Amdadul Haque, an AI-powered Virtual Assistant
+      specializing in web research, data extraction,
+      lead generation, and e-commerce operations.
+    </p>
+
+    <p>
+      I help businesses save time, streamline workflows,
+      organize data, and achieve better results through
+      efficient virtual assistance and modern AI tools.
+    </p>
   </section>
 
-  <section>
+  <!-- Services -->
+  <section id="services">
     <h2>My Services</h2>
-    <div class="card">AI-Powered Virtual Assistance</div>
-    <div class="card">Web Scraping & Data Extraction</div>
-    <div class="card">B2B Lead Generation & Web Research</div>
-    <div class="card">Shopify & E-Commerce Management</div>
-    <div class="card">Data Entry & CRM Management</div>
+
+    <div class="card">
+      <strong>AI-Powered Virtual Assistance</strong>
+      <p>Administrative support, research, scheduling, and workflow assistance.</p>
+    </div>
+
+    <div class="card">
+      <strong>Web Scraping & Data Extraction</strong>
+      <p>Structured data collection, cleaning, and organization.</p>
+    </div>
+
+    <div class="card">
+      <strong>B2B Lead Generation</strong>
+      <p>Targeted prospect research and lead list building.</p>
+    </div>
+
+    <div class="card">
+      <strong>Shopify & E-Commerce Management</strong>
+      <p>Product listing, store support, and inventory updates.</p>
+    </div>
+
+    <div class="card">
+      <strong>Data Entry & CRM Management</strong>
+      <p>Accurate data entry, spreadsheet management, and CRM updates.</p>
+    </div>
   </section>
 
-  <section>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Professional Skills</h2>
+
+    <div class="card">
+      Web Research | Lead Generation | Data Entry |
+      Virtual Assistance | Shopify | CRM |
+      Microsoft Excel | Google Sheets |
+      AI Tools | Data Extraction
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
     <h2>Portfolio Projects</h2>
-    <p>Selected project examples and case studies will be added here.</p>
+
+    <div class="card">
+      <h3>Web Research & Lead Generation</h3>
+      <p>
+        Research, prospect identification, and organized
+        business lead lists.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce Store Support</h3>
+      <p>
+        Shopify product management, inventory updates,
+        and administrative support.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Data Extraction & Organization</h3>
+      <p>
+        Data collection, spreadsheet formatting,
+        cleaning, and reporting.
+      </p>
+    </div>
+
+    <p>
+      Detailed case studies and verified work samples
+      will be added soon.
+    </p>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Available for freelance and remote opportunities.</p>
-    <a class="btn" href="https://github.com/Amdadulhaque-freelancer">My GitHub</a>
+    <h2>Let's Work Together</h2>
+
+    <p>
+      Looking for a reliable Virtual Assistant,
+      Web Researcher, or E-Commerce Support Specialist?
+    </p>
+
+    <p>
+      I'm available for freelance and remote opportunities.
+    </p>
+
+    <a
+      class="btn"
+      href="https://www.upwork.com/freelancers/~01eb08bc32296624f3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Hire Me on Upwork
+    </a>
+
+    <a
+      class="btn secondary-btn"
+      href="https://github.com/Amdadulhaque-freelancer"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Visit My GitHub
+    </a>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © 2026 Amdadul Haque
+    &copy; 2026 Amdadul Haque. All Rights Reserved.
   </footer>
+
 </body>
 </html>
